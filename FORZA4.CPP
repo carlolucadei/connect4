@@ -652,7 +652,7 @@ void titoli_coda(void) {
   int offsetx; // spostamento delle X
   int offsety; // spostamento delle Y
   unsigned char buf;
-  if ((bmp = fopen("titoli.bmp", "rb")) == NULL) {
+  if ((bmp = fopen("\\resources\\credits.bmp", "rb")) == NULL) {
     printf("%s non trovato !\n");
   }
   fread( & fheader, sizeof(struct header), 1, bmp);
