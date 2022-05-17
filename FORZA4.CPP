@@ -20,6 +20,8 @@
 #define ARROW_UP 77
 #define ARROW_DOWN 80
 #define ESCAPE 27
+#define ENTER 13
+#define BACKSPACE 13
 
 int huge G320(void) {
   return (0); //320x200 256
@@ -624,8 +626,8 @@ int input_nome(char * p, char * app, int flag) {
     screen_write("continuare", 70, 100, 0);
     t = getch();
   }
-  while ((t != 13) && (i != 9)) {
-    if (t != 8) {
+  while ((t != ENTER) && (i != 9)) {
+    if (t != BACKSPACE) {
       nome[i] = t;
       nome[i + 1] = '\0';
       i++;
