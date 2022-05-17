@@ -83,7 +83,7 @@ main() {
 
   azzera();
   do {
-    if (tasto == 80) {
+    if (tasto == ARROW_DOWN) {
       i = 0;
       if (dischetto % 2 == 0) {
         // visualizzo il dischetto ROSSO
